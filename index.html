@@ -1,244 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sushma Bilidale | Data Analyst Portfolio</title>
-  <meta name="description" content="Portfolio of Sushma Bilidale — Data Analyst specializing in Power BI, SQL, and AWS." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><rect width=%27100%27 height=%27100%27 fill=%27%230a2540%27/><text x=%2750%27 y=%2758%27 font-size=%2756%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Inter%27>SB</text></svg>">
-  <style>
-    :root{
-      --bg:#0b1220;
-      --panel:#0f172a;
-      --muted:#94a3b8;
-      --text:#e2e8f0;
-      --accent:#22d3ee;
-      --accent-2:#38bdf8;
-      --chip:#1e293b;
-      --border:#1f2a44;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1220 0%,#0a1222 100%);color:var(--text);scroll-behavior:smooth}
-    a{color:var(--accent);text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{width:min(1100px,92%);margin-inline:auto}
-    .nav{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.75);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-    .nav .inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.5px}
-    .brand .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(45deg,var(--accent),var(--accent-2))}
-    .menu a{margin-left:18px;color:#cbd5e1;font-weight:500}
-    .menu a:hover{color:white}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:64px 0 32px}
-    .hero .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:rgba(34,211,238,.08);color:#a5f3fc;font-weight:600;font-size:12px;letter-spacing:.5px;margin-bottom:12px}
-    h1{font-size:clamp(28px,5vw,52px);line-height:1.05;margin:0 0 10px}
-    .subtitle{color:var(--muted);font-size:clamp(16px,2.6vw,18px)}
-    .cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
-    .btn{padding:12px 16px;border-radius:14px;border:1px solid var(--border);background:#0e1729;color:#e2e8f0;font-weight:600}
-    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#06202a;border:none}
-    .panel{background:radial-gradient(1200px 400px at 0% 0%,rgba(34,211,238,.08),transparent),linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow)}
-    .avatar{aspect-ratio:1/1;border-radius:20px;overflow:hidden;border:1px solid var(--border)}
-    .section{padding:42px 0}
-    .section h2{font-size:26px;margin:0 0 18px}
-    .grid{display:grid;gap:16px}
-    .grid.skills{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
-    .chip{display:inline-flex;align-items:center;gap:8px;background:var(--chip);padding:8px 10px;border-radius:999px;border:1px solid var(--border);margin:6px 6px 0 0;font-size:14px}
-    .xp-card,.proj,.edu{padding:18px;border-radius:20px;border:1px solid var(--border);background:rgba(15,23,42,.6)}
-    .xp-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
-    .xp-head b{font-size:18px}
-    .xp-points{margin:0;padding-left:18px;color:#cbd5e1}
-    .proj h3{margin:0 0 6px}
-    .edu h3{margin:0 0 6px}
-    .footer{padding:28px 0;color:#94a3b8;border-top:1px solid var(--border);margin-top:40px}
-    .contact-card{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .inset{padding:18px}
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .contact-card{grid-template-columns:1fr}
-    }
-    /* simple reveal animations */
-    .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
-    .reveal.visible{opacity:1;transform:none}
-  </style>
-</head>
-<body>
-  <header class="nav">
-    <div class="container inner">
-      <div class="brand"><span class="dot"></span> Sushma Bilidale</div>
-      <nav class="menu">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sushma Bilidale Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-  <main class="container">
-    <section class="hero section">
-      <div>
-        <span class="kicker">Data Analyst • Power BI • SQL • AWS</span>
-        <h1 class="reveal">Turning messy data into clear, decision‑ready stories.</h1>
-        <p class="subtitle reveal">UK‑based Data Analyst with a strong blend of analytics and delivery. Reduced in‑flight fraud by 45%+, automated real‑time dashboards, and improved ops response times by 30% across telecom and airline projects.</p>
-        <div class="cta reveal">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="Sushma_Data_Analyst.pdf" download>Download CV</a>
-          <a class="btn" href="mailto:sushgrad@gmail.com">Email Me</a>
-          <a class="btn" href="https://www.linkedin.com/in/sushma-bilidale-1174831b3/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-      <div class="panel inset reveal">
-        <img class="avatar" src="https://via.placeholder.com/800x800.png?text=Sushma+Bilidale" alt="Sushma Bilidale portrait placeholder" />
-        <p style="color:#94a3b8;margin-top:10px">Tip: Replace this placeholder with your photo by saving it as <code>assets/profile.jpg</code> and updating the <code>src</code>.</p>
-      </div>
-    </section>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-    <section id="about" class="section panel inset reveal">
-      <h2>About Me</h2>
-      <p>I’m a Data Analyst with an MSc in Engineering Management and hands‑on experience across airlines and telecom. I enjoy digging into large, messy datasets; building crisp Power BI dashboards; and partnering with stakeholders to ship practical, measurable improvements.</p>
-    </section>
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Sushma Bilidale</h1>
+						<p>Data Analyst • Power BI • SQL • AWS</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
-    <section id="skills" class="section reveal">
-      <h2>Skills</h2>
-      <div class="grid skills">
-        <div class="panel inset">
-          <h3>Data & Analytics</h3>
-          <div>
-            <span class="chip">Power BI</span>
-            <span class="chip">Excel / Power Query</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Data Cleaning</span>
-            <span class="chip">Dashboards & KPIs</span>
-          </div>
-        </div>
-        <div class="panel inset">
-          <h3>Platforms & Dev</h3>
-          <div>
-            <span class="chip">AWS (S3)</span>
-            <span class="chip">JavaScript (Angular)</span>
-            <span class="chip">Jira / Confluence</span>
-            <span class="chip">GitHub</span>
-          </div>
-        </div>
-        <div class="panel inset">
-          <h3>Delivery</h3>
-          <div>
-            <span class="chip">Requirements Gathering</span>
-            <span class="chip">Stakeholder Management</span>
-            <span class="chip">Agile / Scrum</span>
-            <span class="chip">Process Mapping</span>
-            <span class="chip">Communication</span>
-          </div>
-        </div>
-      </div>
-    </section>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#projects">Projects</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
 
-    <section id="experience" class="section reveal">
-      <h2>Experience</h2>
-      <div class="grid">
-        <div class="xp-card">
-          <div class="xp-head">
-            <b>Data Analyst — AirFi Aero (Inflight Services)</b>
-            <span>Bengaluru, India • Mar 2022 – Jun 2023</span>
-          </div>
-          <ul class="xp-points">
-            <li>Detected & reduced in‑flight duty‑free fraud by 38% using SQL to analyze transaction logs; designed risk‑flagging logic for offline scenarios.</li>
-            <li>Processed 50k+ records in Excel (Power Query, pivots) to reveal fraud by card type, route, and timing; led to post‑flight validation and 45%+ fraud leakage reduction.</li>
-            <li>Built Power BI/Excel dashboards tracking fraud by route, crew, and category with real‑time KPIs and historical benchmarking.</li>
-            <li>Collaborated with clients to scope UI/UX changes and ship tailored front‑end features (Angular) via Agile sprints in Jira.</li>
-            <li>Supported AWS S3 content deployment for airline apps and contributed across onboarding to release cycles.</li>
-          </ul>
-        </div>
+				<!-- Main -->
+					<div id="main">
 
-        <div class="xp-card">
-          <div class="xp-head">
-            <b>Assistant Manager (Telecom Analytics & Customer Ops) — Ishan Technologies</b>
-            <span>Bengaluru, India • Jun 2023 – Dec 2023</span>
-          </div>
-          <ul class="xp-points">
-            <li>Analyzed large‑scale connectivity datasets to produce outage trend reports; reduced repeat issues by 25% with preventative strategies.</li>
-            <li>Automated real‑time Power BI/Excel dashboards for installations, daily outages, and task allocation to improve cross‑team coordination.</li>
-            <li>Improved response time by 30% through insights from interaction logs and system data; led stand‑ups and tracked SLAs via Excel trackers.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+						<!-- Projects -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2>Mapping the Path to Net‑Zero (Dissertation, 2024–2025)</h2>
+									</header>
+									<p>Systematic, data‑driven review of 100+ studies using VOSviewer, PRISMA and PICO to identify 70 high‑impact interventions across energy, transport, and manufacturing — aligned with JLR’s Reimagine strategy. Awarded Distinction.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2>Fraud Analytics Dashboards</h2>
+									</header>
+									<p>Power BI & Excel dashboards with real‑time KPIs monitoring fraud by route, crew, and product category; enabled prioritised audits and measurable revenue protection.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+								</article>
+							</section>
 
-    <section id="projects" class="section reveal">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="proj">
-          <h3>Mapping the Path to Net‑Zero (Dissertation, 2024–2025)</h3>
-          <p>Systematic, data‑driven review of 100+ studies using VOSviewer, PRISMA and PICO to identify 70 high‑impact interventions across energy, transport, and manufacturing — aligned with JLR’s Reimagine strategy. Awarded Distinction.</p>
-          <div>
-            <span class="chip">VOSviewer</span>
-            <span class="chip">Systematic Review</span>
-            <span class="chip">Data Synthesis</span>
-          </div>
-        </article>
-        <article class="proj">
-          <h3>Fraud Analytics Dashboards</h3>
-          <p>Power BI & Excel dashboards with real‑time KPIs monitoring fraud by route, crew, and product category; enabled prioritised audits and measurable revenue protection.</p>
-          <div>
-            <span class="chip">Power BI</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Excel</span>
-          </div>
-        </article>
-      </div>
-    </section>
+						<!-- Experience -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2>Data Analyst — AirFi Aero (Inflight Services)</h2>
+										<p>Bengaluru, India • Mar 2022 – Jun 2023</p>
+									</header>
+									<p>Detected & reduced in‑flight duty‑free fraud by 38% using SQL to analyze transaction logs; designed risk‑flagging logic for offline scenarios. Built dashboards in Power BI and Excel to track fraud by route, crew, and category. Collaborated on UI/UX changes using Angular in Agile sprints.</p>
+								</article>
+								<article>
+									<header>
+										<h2>Assistant Manager — Ishan Technologies</h2>
+										<p>Bengaluru, India • Jun 2023 – Dec 2023</p>
+									</header>
+									<p>Analyzed large-scale connectivity datasets to produce outage trend reports; automated real-time dashboards in Power BI & Excel; improved response times by 30% through insights from logs and system data.</p>
+								</article>
+							</section>
 
-    <section id="education" class="section reveal">
-      <h2>Education</h2>
-      <div class="grid">
-        <div class="edu">
-          <h3>MSc, Engineering Management — Aston University</h3>
-          <p>Birmingham, UK • Jan 2024 – Jan 2025 • Grade: 2:1 (First class honors)</p>
-        </div>
-        <div class="edu">
-          <h3>B.E, Electrical & Electronics — The Oxford College of Engineering</h3>
-          <p>Bangalore, India • Aug 2018 – Aug 2022 • Grade: 2:1</p>
-        </div>
-      </div>
-    </section>
+						<!-- Skills -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2>Skills</h2>
+									</header>
+									<p><strong>Data & Analytics:</strong> Power BI, Excel/Power Query, SQL, Data Cleaning, Dashboards & KPIs</p>
+									<p><strong>Platforms & Dev:</strong> AWS (S3), JavaScript (Angular), Jira/Confluence, GitHub</p>
+									<p><strong>Delivery:</strong> Requirements Gathering, Stakeholder Management, Agile/Scrum, Process Mapping, Communication</p>
+								</article>
+							</section>
 
-    <section id="contact" class="section panel inset reveal">
-      <h2>Contact</h2>
-      <div class="contact-card">
-        <div>
-          <p><b>Location:</b> West Midlands, UK</p>
-          <p><b>Email:</b> <a href="mailto:sushgrad@gmail.com">sushgrad@gmail.com</a></p>
-          <p><b>Phone:</b> +44 7587 59 6191</p>
-          <p><b>LinkedIn:</b> <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sushma-bilidale-1174831b3/">/in/sushma-bilidale-1174831b3/</a></p>
-        </div>
-        <form action="https://formspree.io/f/xknldwpl" method="POST" class="panel inset">
-          <label>Name<br><input required name="name" type="text" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b1325;color:#e2e8f0"></label><br><br>
-          <label>Email<br><input required name="email" type="email" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b1325;color:#e2e8f0"></label><br><br>
-          <label>Message<br><textarea required name="message" rows="4" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b1325;color:#e2e8f0"></textarea></label><br><br>
-          <button class="btn primary" type="submit">Send</button>
-          <p style="color:#94a3b8;font-size:12px;margin-top:8px">This uses Formspree. Replace the action URL with your own form endpoint if desired.</p>
-        </form>
-      </div>
-    </section>
-  </main>
+						<!-- Education -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2>MSc, Engineering Management — Aston University</h2>
+										<p>Birmingham, UK • Jan 2024 – Jan 2025 • Grade: 2:1 (First class honors)</p>
+									</header>
+								</article>
+								<article>
+									<header>
+										<h2>B.E, Electrical & Electronics — The Oxford College of Engineering</h2>
+										<p>Bangalore, India • Aug 2018 – Aug 2022 • Grade: 2:1</p>
+									</header>
+								</article>
+							</section>
 
-  <footer class="footer">
-    <div class="container">
-      <div>© <span id="y"></span> Sushma Bilidale — Built with vanilla HTML/CSS.</div>
-    </div>
-  </footer>
+						<!-- Contact -->
+							<footer id="footer">
+								<div class="inner">
+									<h2>Contact Details</h2>
+									<p>Email: <a href="mailto:sushgrad@gmail.com">sushgrad@gmail.com</a></p>
+									<p>LinkedIn: <a href="https://www.linkedin.com/in/sushma-bilidale-1174831b3/">https://www.linkedin.com/in/sushma-bilidale-1174831b3/</a></p>
+									<p>Phone: +44 7587 59 6191</p>
+								</div>
+							</footer>
 
-  <script>
-    // simple reveal on scroll
-    const onIntersect = entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
-    const observer = new IntersectionObserver(onIntersect, {threshold: .12});
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
